@@ -46,7 +46,7 @@ elif unit_consume > 1000 :
 print("According to unit consume, rate is ",rate,"Rs/unit \n")
 
 def computepay(rate,units):
-    fix_charge = float(102).         # As per the 1 Apl 2021 - 31 Mar 202 Fixed Charges & Wheeling Charges are taken.
+    fix_charge = float(102)          # As per the 1 Apl 2021 - 31 Mar 202 Fixed Charges & Wheeling Charges are taken.
     W_charge = float(1.38) 
     return float(rate) * int(units) + float(fix_charge) + float(W_charge)*int(units)
 
