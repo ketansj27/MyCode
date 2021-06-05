@@ -2,7 +2,7 @@
 
 while True :
     try :
-        weight = int(input("Enter your weight in Kg : "))
+        weight = float(input("Enter your weight in Kg : "))
         height = float(input("Enter your height in cm : "))
         break
     except :
