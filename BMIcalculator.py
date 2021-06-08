@@ -1,5 +1,5 @@
-#  -*- coding: utf-8 -*-
-
+# -*- coding: utf-8 -*-
+import time
 class valueError1(UserWarning):
     pass
 class valueError2(UserWarning):
@@ -31,20 +31,19 @@ def comments(bmi,h):
     h = h/100
     l_weight = h*h * 18.5
     H_weight = h*h * 24.5
-    print(" \n According to the height your Weight should be in rage of ",
-          round(l_weight,2),"Kg "" To ",round(H_weight,2),"Kg")
-print("\n")
+    print(" \n *** According to the height your Weight should be in rage of ",
+          round(l_weight,2),"Kg "" To ",round(H_weight,2),"Kg *** ")
 
 # determine the BMI
 if bmi < 18.5 :
-    print("__Under weight__")
+    print(" ||| Under weight |||")
     comments(bmi,height)
 elif bmi >18.5 and bmi <= 24.9 :
-     print("__Normal weight__\n")
-     print("According to Height your Weight is GOOD !")
+     print(" ||| Normal weight |||\n")
+     print("According to Height your have Healthy BMI !")
 elif bmi > 24.9 and bmi <= 29.9 :
-    print("__Over weight__")
+    print(" ||| Over weight |||")
     comments(bmi,height)
 else :
-    print("__Obesity__")
+    print(" ||| Obesity |||")
     comments(bmi,height)
