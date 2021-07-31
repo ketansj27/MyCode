@@ -36,6 +36,3 @@ orderId = int(input())
 orderId = str(orderId)
 result = orderIDconF(orderId)
 print(result)
-
-
-
